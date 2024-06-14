@@ -1,0 +1,82 @@
+.introduce {
+    background-color: #25262A;
+    padding: 100px 0;
+    color: white;
+    height: auto;
+
+
+    .learning {
+        background-color: #2D2E32;
+        margin-bottom: 2rem;
+        position: relative;
+        padding: 20px 30px;
+        border-radius: 10px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .learning:hover {
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        transform: scale(1.05);
+    }
+
+    .learning {
+        h2 {
+            color: #C800CC;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: #B6B4B4;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+
+        a {
+            color: #C800CC;
+            font-weight: 600;
+        }
+
+        img {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+        }
+
+    }
+
+
+    .introduce-text {
+        h5 {
+            font-size: 1rem;
+            color: #B6B4B4;
+        }
+
+        h2 {
+            font-size: 3.5rem;
+
+            @media screen and (max-width: 991px) {
+                font-size: 2rem;
+            }
+        }
+
+        h4 {
+            font-size: 2rem;
+            color: #B6B4B4;
+
+            @media screen and (max-width: 991px) {
+                font-size: 1.5rem;
+            }
+        }
+
+        p {
+            color: #B6B4B4;
+            font-size: 1.2rem;
+
+            @media screen and (max-width: 991px) {
+                font-size: 1rem;
+            }
+        }
+
+    }
+
+}

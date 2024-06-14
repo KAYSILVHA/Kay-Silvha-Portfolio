@@ -1,0 +1,51 @@
+.banner {
+    margin-top: 10rem;
+
+    p {
+        color: #B6B4B4;
+
+        @media screen and (max-width: 1200px) {
+            width: 80%;
+        }
+    }
+
+    a {
+        color: #C800CC;
+        font-weight: 600;
+    }
+
+    .badge-title {
+        background-color: #C800CC;
+        color: #2D2E32;
+        margin-bottom: 2rem;
+    }
+
+    .banner-image {
+        width: 40rem;
+
+        @media screen and (max-width: 1400px) {
+            width: 35rem;
+        }
+
+        @media screen and (max-width: 1200px) {
+            width: 30rem;
+        }
+
+        @media screen and (max-width: 991px) {
+            width: 20rem;
+        }
+
+        @media screen and (max-width: 767px) {
+            width: 15rem;
+        }
+
+    }
+
+    @media screen and (max-width: 991px) {
+        margin-bottom: 5rem;
+        margin-top: 40px;
+    }
+
+
+
+}

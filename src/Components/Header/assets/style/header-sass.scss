@@ -1,0 +1,58 @@
+header {
+    background-color: #2D2E32;
+    height: auto;
+    padding: 20px 0;
+
+    img {
+        width: 7rem;
+
+        @media screen and (max-width: 991px) {
+            width: 4rem;
+            height: 2rem;
+        }
+    }
+
+    .nav-item {
+        a {
+            color: #B6B4B4;
+        }
+
+        a:hover {
+            color: #C800CC;
+        }
+
+    }
+
+    .button img{
+        width: 2.5rem;
+    }
+}
+
+.nav-two {
+    .whatsLogo {
+        width: 1.2rem;
+    }
+
+    .gitHubLogo {
+        width: 1.2rem;
+    }
+
+    .mail {
+        width: 3rem;
+    }
+}
+
+
+.offcanvas{
+    a{
+        font-size: 1.2rem;
+    }
+
+    .title{
+        color: #C800CC;
+    }
+    
+    .nav-image{
+        width: 2.5rem;
+    }
+}
