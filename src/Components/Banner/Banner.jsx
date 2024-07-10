@@ -17,6 +17,11 @@ function Banner() {
                                 <h1 className='text-light text-lg-start text-center'>Show me the code</h1>
                             </div>
                             <p className='text-lg-start text-center'>I create and code beautiful and incredible things, and I love what I do.</p>
+                            <a target="_blank" href="/src/Components/CV/cv.pdf" download="cv.pdf">
+                                <button className='btn btn-cv bg-transparent text-white'>
+                                    DOWNLOAD CV
+                                </button>
+                            </a>
                             <a href="#contact" className="link text-lg-start text-center">LET’S TALK!</a>
                         </div>
                         <div className='w-100'></div>
