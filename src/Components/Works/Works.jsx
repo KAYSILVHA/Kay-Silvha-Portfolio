@@ -1,13 +1,12 @@
 import React from 'react';
 import {
+    Card,
+    CardBody,
     Col,
 } from 'reactstrap';
 
 import "./assets/style/works-sass.scss"
 
-import LordOfRings from "./assets/images/king-of-rings.png"
-import Ohayo from "./assets/images/candys.png"
-import OnePiece from "./assets/images/one-piece.png"
 function Works() {
 
     return (
@@ -16,31 +15,31 @@ function Works() {
                 <h2 className='text-lg-start text-center'>Latest Works</h2>
                 <p className='text-lg-start text-center'>It’s my creative moment :)</p>
                 <div className="w-100 d-flex flex-lg-row flex-column align-items-center justify-content-center">
-                    <Col className='col-lg-4'>
-                        <img src={LordOfRings} alt="Lord Of Rings" className='image-lord-of-rings' />
-                        <div className="text">
-                            <h3>Lord of Rings </h3>
-                            <p>Because I really love this trilogy!</p>
-                        </div>
+                    <Col>
+                        <Card>
+                            <CardBody className='one'>
+                                <h3>Lord of Rings </h3>
+                                <p>Because I really love this trilogy!</p>
+                            </CardBody>
+                        </Card>
 
                     </Col>
-                    <Col className='col-lg-4'>
-                        <div>
-                            <img src={OnePiece} alt="One Piece" className='image-one-piece' />
-                        </div>
-                        <div className="text">
-                            <h3>One piece</h3>
-                            <p>Yes I’m a OTAKU!</p>
-                        </div>
+                    <Col>
+                        <Card>
+                            <CardBody className='two'>
+                                <h3>One piece</h3>
+                                <p>Yes I’m a OTAKU!</p>
+                            </CardBody>
+                        </Card>
                     </Col>
-                    <Col className='col-lg-4'>
-                        <div>
-                            <img src={Ohayo} alt="Ohayo Candy Shop" className='ohayo-candys' />
-                        </div>
-                        <div className="text">
-                            <h3>Ohayo Candy Shop</h3>
-                            <p>And yes, i like candys</p>
-                        </div></Col>
+                    <Col>
+                        <Card>
+                            <CardBody className='three'>
+                                <h3>Ohayo Candy Shop</h3>
+                                <p>And yes, i like candys</p>
+                            </CardBody>
+                        </Card>
+                    </Col>
                 </div>
                 <h5><a href="#">ALL PROJECTS</a></h5>
 
