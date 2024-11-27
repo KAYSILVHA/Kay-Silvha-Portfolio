@@ -17,7 +17,7 @@ function Works() {
                 <div className="w-100 d-flex flex-lg-row flex-column align-items-center justify-content-center">
                     <Col>
                         <Card>
-                            <CardBody className='one'>
+                            <CardBody className='one d-flex flex-column justify-content-end'>
                                 <h3>Lord of Rings </h3>
                                 <p>Because I really love this trilogy!</p>
                             </CardBody>
@@ -26,7 +26,7 @@ function Works() {
                     </Col>
                     <Col>
                         <Card>
-                            <CardBody className='two'>
+                            <CardBody className='two d-flex flex-column justify-content-end'>
                                 <h3>One piece</h3>
                                 <p>Yes I’m a OTAKU!</p>
                             </CardBody>
@@ -34,16 +34,17 @@ function Works() {
                     </Col>
                     <Col>
                         <Card>
-                            <CardBody className='three'>
+                            <CardBody className='three d-flex flex-column justify-content-end'>
                                 <h3>Ohayo Candy Shop</h3>
                                 <p>And yes, i like candys</p>
                             </CardBody>
                         </Card>
                     </Col>
                 </div>
-                <h5><a href="#">ALL PROJECTS</a></h5>
-
-                <p className='text'>Some projects are not available, please contact me to see them</p>
+                <div className='all-projects'>
+                    <h5><a href="#">ALL PROJECTS</a></h5>
+                    <p className='text'>Some projects are not available, please contact me to see them</p>
+                </div>
             </div>
         </div>
     )
