@@ -65,15 +65,15 @@ function Services() {
                             <Row className='row-tab'>
                                 <Col className='col-tab d-flex align-items-center justify-content-between'>
                                     <img src={Tomoe} alt="Tomoe" />
-                                    <p className='text-tab'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    <p className='text-tab'>I have solid experience in Front-End development, mastering technologies such as HTML, CSS and modern frameworks such as React and Bootstrap. My approach combines clean, efficient code with user-centered design, thanks to my knowledge in UX/UI design. I'm always looking for innovative ways to transform ideas into attractive and functional visual interfaces.</p>
                                 </Col>
                                 <Col className='col-tab d-flex align-items-center justify-content-between'>
-                                    <p className='text-tab'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    <p className='text-tab'>As a Front-End Developer, I love creating visual experiences that delight users. My stack includes HTML, CSS, React, Sass and Bootstrap, tools I use to develop responsive and intuitive interfaces. The integration of design with functionality is my differentiator, always prioritizing accessibility and usability.</p>
                                     <img src={Hinata} alt="Hinata" />
                                 </Col>
                                 <Col className='col-tab d-flex align-items-center justify-content-between'>
                                     <img src={Inosuke} alt="Inosuke" />
-                                    <p className='text-tab'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    <p className='text-tab'>Combining my technical skills in Front-End with a refined look as a UX/UI designer, I specialize in transforming designs into interactive interfaces. I use modern technologies such as React, Bootstrap and Sass to create responsive and dynamic projects. I seek to continually learn and collaborate on solutions that positively impact users.</p>
                                 </Col>
                             </Row>
                         </TabPane>
@@ -81,15 +81,15 @@ function Services() {
                             <Row className='row-tab'>
                                 <Col className='col-tab d-flex align-items-center justify-content-between'>
                                     <img src={Tomoe} alt="Tomoe" />
-                                    <p className='text-tab'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    <p className='text-tab'>My expertise in Back-End development includes languages such as Java, JavaScript, PHP, SQL, and Python. I enjoy building robust systems, ensuring performance and security, with a strong focus on scalability and efficiency to meet project demands.</p>
                                 </Col>
                                 <Col className='col-tab d-flex align-items-center justify-content-between'>
                                     <img src={Tomoe} alt="Tomoe" />
-                                    <p className='text-tab'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    <p className='text-tab'>Combining technical knowledge with strategic thinking, I develop Back-End solutions that seamlessly connect interfaces. My priority is to optimize server logic to support complex projects effectively.</p>
                                 </Col>
                                 <Col className='col-tab d-flex align-items-center justify-content-between'>
                                     <img src={Tomoe} alt="Tomoe" />
-                                    <p className='text-tab'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    <p className='text-tab'>I believe the essence of Back-End lies in its ability to transform data into meaningful functionality. I'm always exploring new tools and practices to deliver integrated, high-performance systems.</p>
                                 </Col>
                             </Row>
                         </TabPane>
@@ -97,15 +97,15 @@ function Services() {
                             <Row className='row-tab'>
                                 <Col className='col-tab d-flex align-items-center justify-content-between'>
                                     <img src={Tomoe} alt="Tomoe" />
-                                    <p className='text-tab'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    <p className='text-tab'>As a UX/UI designer, I turn ideas into functional and visually appealing interfaces. My focus is on creating intuitive experiences that place the user at the center of every project.</p>
                                 </Col>
                                 <Col className='col-tab d-flex align-items-center justify-content-between'>
                                     <img src={Tomoe} alt="Tomoe" />
-                                    <p className='text-tab'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    <p className='text-tab'>As a UX/UI designer, I turn ideas into functional and visually appealing interfaces. My focus is on creating intuitive experiences that place the user at the center of every project.</p>
                                 </Col>
                                 <Col className='col-tab d-flex align-items-center justify-content-between'>
                                     <img src={Tomoe} alt="Tomoe" />
-                                    <p className='text-tab'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    <p className='text-tab'>I believe in the power of good design to create connections between people and products. My UX/UI skills enable me to craft visual solutions that communicate, engage, and solve problems effectively.</p>
                                 </Col>
                             </Row>
                         </TabPane>
@@ -113,15 +113,15 @@ function Services() {
                             <Row className='row-tab'>
                                 <Col className='col-tab d-flex align-items-center justify-content-between'>
                                     <img src={Tomoe} alt="Tomoe" />
-                                    <p className='text-tab'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    <p className='text-tab'>I’m passionate about lifelong learning and knowledge sharing. I’ve taught classes and developed educational content, driven by my love for teaching and learning.</p>
                                 </Col>
                                 <Col className='col-tab d-flex align-items-center justify-content-between'>
                                     <img src={Tomoe} alt="Tomoe" />
-                                    <p className='text-tab'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    <p className='text-tab'>I enjoy exploring different areas, such as reading and writing, which help expand my creativity and perspective. Creating educational content allows me to combine these interests and contribute to the community.</p>
                                 </Col>
                                 <Col className='col-tab d-flex align-items-center justify-content-between'>
                                     <img src={Tomoe} alt="Tomoe" />
-                                    <p className='text-tab'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    <p className='text-tab'>Education and creativity are central to my hobbies. Beyond studying and teaching, I love turning ideas into projects that inspire and create a positive impact.</p>
                                 </Col>
                             </Row>
                         </TabPane>

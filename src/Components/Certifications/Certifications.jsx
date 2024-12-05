@@ -10,6 +10,8 @@ import NubeLogo from "./assets/images/nube-logo.png"
 import RocketseatLogo from "./assets/images/rocketseat-logo.png"
 import UniLogo from "./assets/images/uni-logo.png"
 import VNWLogo from "./assets/images/vaiNaWeb-logo.png"
+import SenacLogo from "./assets/images/senac_logo.png"
+import ProaLogo from "./assets/images/proa-logo.png"
 
 import "./assets/style/certifications-sass.scss"
 
@@ -30,7 +32,8 @@ function Certifications() {
                     <img src={RocketseatLogo} alt="Rocketseat" />
                     <img src={UniLogo} alt="Unicesumar" />
                     <img src={VNWLogo} alt="Vai na Web" />
-                    <a href="">See More....</a>
+                    <img src={SenacLogo} alt="Senac" />
+                    <img src={ProaLogo} alt="Proa" />
                 </section>
             </section>
         </>
