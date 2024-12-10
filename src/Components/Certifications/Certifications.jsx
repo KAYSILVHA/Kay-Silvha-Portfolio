@@ -34,6 +34,7 @@ function Certifications() {
                     <img src={VNWLogo} alt="Vai na Web" />
                     <img src={SenacLogo} alt="Senac" />
                     <img src={ProaLogo} alt="Proa" />
+                    <a href="https://www.linkedin.com/in/kayrasilvacardoso/details/certifications/" target='_blank'>See More....</a>
                 </section>
             </section>
         </>

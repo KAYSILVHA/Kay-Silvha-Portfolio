@@ -12,6 +12,7 @@ import {
 } from "reactstrap";
 
 import YoutubeLogo from "./assets/images/youtube-logo.png"
+import LinkedInLogo from "./assets/images/linkedin-logo.png"
 import FaceLogo from "./assets/images/face-logo.png"
 import InstaLogo from "./assets/images/insta-logo.png"
 import WhatsLogo from "./assets/images/whats-logo.png"
@@ -63,7 +64,7 @@ function Footer() {
                         <Col className='col-lg-4 col-12 d-flex align-items-center mb-lg-0 mb-3 justify-content-lg-start justify-content-center'>
                             <Nav className='nav-images d-flex align-items-center justify-content-lg-start justify-content-center'>
                                 <NavItem>
-                                    <NavLink href='#'><img src={YoutubeLogo} alt="Youtube" /></NavLink>
+                                    <NavLink href='https://www.linkedin.com/in/kayrasilvacardoso/' target='_blank' className='linkedin-img'><img src={LinkedInLogo} alt="Linkedin" /></NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href='https://www.facebook.com/profile.php?id=100088539817707' target='_blank' className='face'><img src={FaceLogo} alt="Facebook" /></NavLink>
