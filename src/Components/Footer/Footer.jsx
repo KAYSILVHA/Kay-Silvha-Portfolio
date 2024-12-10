@@ -21,7 +21,7 @@ function Footer() {
 
     return (
         <>
-            <section className='container-fluid footer h-auto'>
+            <section className='container-fluid footer h-auto' id='contacts'>
                 <section className="container">
                     <Row className='d-flex justify-content-lg-between justify-content-center align-items-lg-start align-items-center text-lg-start text-center container-footer'>
                         <Col className='col-lg-6 col-12 d-flex flex-column align-items-lg-start align-items-center'>
@@ -63,19 +63,19 @@ function Footer() {
                         <Col className='col-lg-4 col-12 d-flex align-items-center mb-lg-0 mb-3 justify-content-lg-start justify-content-center'>
                             <Nav className='nav-images d-flex align-items-center justify-content-lg-start justify-content-center'>
                                 <NavItem>
-                                    <NavLink><img src={YoutubeLogo} alt="Youtube" /></NavLink>
+                                    <NavLink href='#'><img src={YoutubeLogo} alt="Youtube" /></NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className='face'><img src={FaceLogo} alt="Facebook" /></NavLink>
+                                    <NavLink href='https://www.facebook.com/profile.php?id=100088539817707' target='_blank' className='face'><img src={FaceLogo} alt="Facebook" /></NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink><img src={InstaLogo} alt="Instagram" /></NavLink>
+                                    <NavLink href='https://www.instagram.com/dev_kay.0/' target='_blank'><img src={InstaLogo} alt="Instagram" /></NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink><img src={WhatsLogo} alt="WhatsApp" /></NavLink>
+                                    <NavLink href="https://wa.me/5544991270271?text=Olá!%20Te%20encontrei%20pelo%20seu%20portfólio.%20Vamos%20conversar?" target="_blank"><img src={WhatsLogo} alt="WhatsApp" /></NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink><img src={MailLogo} alt="Email" /></NavLink>
+                                    <NavLink  href="mailto:kaysilvha@gmail.com?subject=Contato%20pelo%20portfólio&body=Olá!%20Te%20encontrei%20pelo%20seu%20portfólio.%20Gostaria%20de%20conversar." target='_blank'><img src={MailLogo} alt="Email" /></NavLink>
                                 </NavItem>
                             </Nav>
                         </Col>

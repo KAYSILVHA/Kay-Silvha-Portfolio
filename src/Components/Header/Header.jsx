@@ -32,7 +32,7 @@ function Header() {
         <header className="container-fluid d-flex align-items-center">
             <section className="container d-flex justify-content-between align-items-center nav-bar text-light">
                 <div className="container d-xl-none d-flex justify-content-between ">
-                    <img src={Logo} alt="" />
+                    <img src={Logo} alt="Logo" />
                     <Button onClick={handleShow} className='button bg-transparent border-0'>
                         {/* <i data-eva="menu-outline"></i> */}
                         <img src={Menu} alt="Menu" />
@@ -46,15 +46,15 @@ function Header() {
                         <div className="nav flex-column">
                             <div className="nav-item d-flex align-items-center mb-4">
                                 <img className='nav-image' src={WhatsMobile} alt="WhatsApp" />
-                                <a href="" className="nav-link text-white">WhatsApp</a>
+                                <a href="https://wa.me/5544991270271?text=Olá!%20Te%20encontrei%20pelo%20seu%20portfólio.%20Vamos%20conversar?" target="_blank" className="nav-link text-white">WhatsApp</a>
                             </div>
                             <div className="nav-item d-flex align-items-center mb-4">
-                                <img  className='nav-image' src={GitHubMobile} alt="GITHUB" />
-                                <a href="" className="nav-link text-white">GitHub</a>
+                                <img className='nav-image' src={GitHubMobile} alt="GITHUB" />
+                                <a href="https://github.com/KAYSILVHA" target='_blank' className="nav-link text-white">GitHub</a>
                             </div>
                             <div className="nav-item d-flex align-items-center mb-4">
-                                <img  className='nav-image' src={MailMobile} alt="Email" />
-                                <a href="" className="nav-link text-white">Email</a>
+                                <img className='nav-image' src={MailMobile} alt="Email" />
+                                <a href="mailto:kaysilvha@gmail.com?subject=Contato%20pelo%20portfólio&body=Olá!%20Te%20encontrei%20pelo%20seu%20portfólio.%20Gostaria%20de%20conversar." target='_blank' className="nav-link text-white">Email</a>
                             </div>
                         </div>
                     </Offcanvas.Body>
@@ -72,9 +72,9 @@ function Header() {
                         <div className="nav-item">
                             <a href="#works" className="nav-link">Works</a>
                         </div>
-                        <div className="nav-item">
+                        {/* <div className="nav-item">
                             <a href="#projects" className="nav-link">Projects</a>
-                        </div>
+                        </div> */}
                         <div className="nav-item">
                             <a href="#contacts" className="nav-link">Contacts</a>
                         </div>
@@ -82,15 +82,17 @@ function Header() {
                     <div className='nav-two d-flex align-items-center'>
                         <div className="nav-item d-flex align-items-center">
                             <img src={Whats} alt="Logo WhatsApp" className='whatsLogo' />
-                            <a href="" className="nav-link">WhatsApp</a>
+                            <a href="https://wa.me/5544991270271?text=Olá!%20Te%20encontrei%20pelo%20seu%20portfólio.%20Vamos%20conversar?" target="_blank" className="nav-link">WhatsApp</a>
                         </div>
                         <div className="nav-item d-flex align-items-center">
                             <img src={GitHub} alt="Logo GitHub" className='gitHubLogo' />
-                            <a href="" className="nav-link">GitHub</a>
+                            <a href="https://github.com/KAYSILVHA" target='_blank' className="nav-link">GitHub</a>
                         </div>
+                        <a href="mailto:kaysilvha@gmail.com?subject=Contato%20pelo%20portfólio&body=Olá!%20Te%20encontrei%20pelo%20seu%20portfólio.%20Gostaria%20de%20conversar." target='_blank'>
                         <div className="nav-item d-flex align-items-center">
-                            <img src={Mail} alt="Email" className='mail' />
+                           <img src={Mail} alt="Email" className='mail' />
                         </div>
+                        </a>
                     </div>
                 </section>
             </section>

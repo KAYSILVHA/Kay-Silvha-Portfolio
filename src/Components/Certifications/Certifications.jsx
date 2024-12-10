@@ -19,7 +19,7 @@ function Certifications() {
 
     return (
         <>
-            <section className='container-fluid certications h-auto'>
+            <section className='container-fluid certications h-auto' id='certifications'>
                 <section className="container d-flex flex-wrap justify-content-center align-items-center gap-5">
                     <img src={AluraLogo} alt="Alura" />
                     <img src={CubosLogo} alt="Cubos Academy" />

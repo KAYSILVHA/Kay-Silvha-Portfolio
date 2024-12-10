@@ -14,7 +14,7 @@ function Services() {
     };
 
     return (
-        <div className='container-fluid service'>
+        <div className='container-fluid service' id='services'>
             <div className="container">
                 <div className='d-flex flex-lg-row flex-column align-items-center justify-content-lg-between'>
                     <h2 className='text-lg-start text-center'>And About my Services?</h2>

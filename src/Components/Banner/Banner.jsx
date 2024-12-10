@@ -22,7 +22,7 @@ function Banner() {
                                     DOWNLOAD CV
                                 </button>
                             </a>
-                            <a href="#contact" className="link text-lg-start text-center">LET’S TALK!</a>
+                            <a href="https://wa.me/5544991270271?text=Olá!%20Te%20encontrei%20pelo%20seu%20portfólio.%20Vamos%20conversar?" target="_blank" className="link text-lg-start text-center">LET’S TALK!</a>
                         </div>
                         <div className='w-100'></div>
                     </section>

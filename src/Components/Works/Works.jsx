@@ -10,7 +10,7 @@ import "./assets/style/works-sass.scss"
 function Works() {
 
     return (
-        <div className='container-fluid works'>
+        <div className='container-fluid works' id='works'>
             <div className="container d-flex flex-column align-items-lg-start justify-content-lg-start align-items-center justify-content-center">
                 <h2 className='text-lg-start text-center'>Latest Works</h2>
                 <p className='text-lg-start text-center'>It’s my creative moment :)</p>
@@ -35,7 +35,7 @@ function Works() {
                     </Card>
                 </div>
                 <div className='all-projects'>
-                    <h5><a href="#">ALL PROJECTS</a></h5>
+                    <h5><a href="https://github.com/KAYSILVHA" target='_blank'>ALL PROJECTS</a></h5>
                     <p className='text'>Some projects are not available, please contact me to see them</p>
                 </div>
             </div>
