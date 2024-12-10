@@ -31,6 +31,14 @@
         }
     }
 
+    .kikyou-img {
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+
+        ;
+    }
+
     .navgate-tab {
         margin-top: 5rem;
 
@@ -40,6 +48,36 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            cursor: pointer;
+
+            @media screen and (max-width:1199px) {
+                width: 150px;
+            }
+
+            @media screen and (max-width: 767px) {
+                width: 100%;
+            }
+
+            ;
+        }
+
+        .nav-tabs {
+            width: 100%;
+
+            @media screen and (max-width: 1199px) {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            ;
+
+            @media screen and (max-width: 767px) {
+                width: 100%;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            ;
         }
 
         .nav-link-tab {
@@ -50,6 +88,17 @@
             width: 250px;
             text-align: center;
             margin-bottom: 20px;
+
+            @media screen and (max-width:1199px) {
+                width: 150px;
+            }
+
+            @media screen and (max-width: 767px) {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            ;
         }
 
         .active.nav-link-tab {
@@ -58,7 +107,17 @@
 
         .tab-content {
             margin: 10px 35px;
-            border-top: 2px solid #FFFFFF10
+            border-top: 2px solid #FFFFFF10;
+
+            @media screen and (max-width:1199px) {
+                margin: 10px 0;
+            }
+
+            @media screen and (max-width: 767px) {
+                margin: 10px;
+            }
+
+            ;
         }
 
         .row-tab {
@@ -70,8 +129,12 @@
             .col-tab {
                 background-color: #212122;
                 border-radius: 10px;
+                height: 200px;
+                padding: 50px;
             }
         }
+
+
     }
 
 }
