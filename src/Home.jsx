@@ -30,7 +30,7 @@ function AppContent() {
                         </>
                     }
                 />
-                <Route path="/projects" element={<Projects />} />
+                {/* <Route path="/projects" element={<Projects />} /> */}
             </Routes>
             {!hideHeaderFooter && <Footer />}
         </>

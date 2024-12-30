@@ -4,29 +4,30 @@
     min-height: 100vh;
 }
 
+.slick-track {
+    display: flex !important;
+    gap: 10px;
+}
+
+.front-container{
+    padding: 20px 0 50px;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: #30363d;
-}
 
-.header .back-button {
-    background: #47a6f0;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.header .logo {
-    font-size: 1.5rem;
+    .logo {
+        font-size: 1.5rem;
+    }
 }
 
 .content-main {
     margin: 30px;
+    flex-direction: column;
+    height: 90vh;
 }
 
 .project-card {
@@ -35,11 +36,20 @@
     padding: 20px;
     background: #1c1e22;
     color: white;
+    height: 280px;
 }
 
 .project-card .title {
+    border: 0;
+    background: transparent;
+}
+
+.project-card .title h4 {
     color: #47a6f0;
     margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .project-card .language .circle {
@@ -53,7 +63,56 @@
 
 .total-count {
     margin-top: 20px;
-    font-size: 1.2rem;
-    color: #8b949e;
+    font-size: 0.9rem;
+    color: #5c5c5c;
     text-align: center;
+}
+
+.back-button {
+    background: transparent;
+    padding: 3px 10px;
+    border: 2px solid #C800CC;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+
+
+    img {
+        width: 2rem;
+        height: auto;
+        margin-right: 10px;
+
+        @media screen and (max-width: 991px) {
+            margin-right: 0;
+        }
+    }
+}
+
+.back-button:hover {
+    border: 2px solid #C800CC;
+    background: #000;
+    font-weight: 800;
+    opacity: 0.8;
+
+    img {
+        scale: 1.2;
+        transition: all 0.5s ease-in-out;
+        transform: rotate(360deg);
+    }
+}
+
+.search-input {
+    border: 2px solid #C800CC;
+    background: transparent;
+}
+
+.search-input::placeholder {
+    color: #c7c7c7;
+}
+
+.search-input:focus {
+    color: #c7c7c7;
+    background: transparent;
+    border: 2px solid #C800CC;
+    box-shadow: #C800CC 0px 0px 19px 0px;
 }

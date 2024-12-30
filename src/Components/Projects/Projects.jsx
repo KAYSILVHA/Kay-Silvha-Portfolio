@@ -3,9 +3,13 @@ import Slider from "react-slick";
 import "./assets/style/projects-sass.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Button, Card, CardBody, CardHeader } from "react-bootstrap";
+import { Button, Card, CardBody, CardHeader, InputGroup, OverlayTrigger, Tooltip } from "react-bootstrap";
 import Logo from "../Header/assets/images/Logo.png";
+import Back from "./assets/images/back.png";
 import { useNavigate } from "react-router-dom";
+import { Input } from "reactstrap";
+import Footer from "../Footer/Footer"
+import InputGroupText from "react-bootstrap/esm/InputGroupText";
 
 function Projects() {
     const navigate = useNavigate();
@@ -86,78 +90,121 @@ function Projects() {
     };
 
     return (
-        <div className="projects-container">
-            <header className="container-fluid d-flex align-items-center">
-                <section className="container d-flex justify-content-between align-items-center nav-bar text-light">
-                    <div className="container d-flex justify-content-between ">
-                        <img src={Logo} alt="Logo" />
+        <>
+            <div className="projects-container d-flex flex-column align-items-center">
+                <header className="header container-fluid d-flex align-items-center">
+                    <section className="container d-flex justify-content-between align-items-center nav-bar text-light p-1">
+                        <div className="container d-flex justify-content-between ">
+                            <img src={Logo} alt="Logo" />
+                        </div>
+
+                        <InputGroup>
+                            <Input
+                                type="text"
+                                placeholder="Pesquisar por nome ou linguagem"
+                                value={searchQuery}
+                                onChange={(e) => setSearchQuery(e.target.value)}
+                                className="search-input"
+                            />
+                            <InputGroupText>
+                            <Button></Button>
+                            </InputGroupText>
+                        </InputGroup>
+
+                        <Button className="back-button ms-3" onClick={() => navigate('/')}>
+                            <img src={Back} alt="Go Back" />
+                            <span className="d-lg-flex d-none">Voltar</span>
+                        </Button>
+
+                    </section>
+                </header>
+
+                <div className="content-main container d-flex justify-content-center">
+                    <div className="front-container">
+                        <h2>
+                            Front-End
+                        </h2>
+                        <Slider {...sliderSettings} className="slider-container">
+                            {filteredFrontEndRepos.map((repo) => (
+                                <Card className="project-card" key={repo.id}>
+                                    <CardHeader className="title">
+                                        <OverlayTrigger
+                                            placement="top"
+                                            overlay={<Tooltip id={`tooltip-${repo.id}`}>{repo.name}</Tooltip>}
+                                        >
+                                            <h4 className="text-truncate">{repo.name}</h4>
+                                        </OverlayTrigger>
+                                    </CardHeader>
+                                    <CardBody className="d-flex flex-column h-100">
+                                        <span className="date-create">
+                                            {Intl.DateTimeFormat("pt-BR").format(new Date(repo.created_at))}
+                                        </span>
+                                        <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
+                                            Acessar Projeto
+                                        </a>
+                                        {repo.topics && repo.topics.length > 0 && (
+                                            <div className="topics mt-3">
+                                                <ul className="list-inline">
+                                                    {repo.topics.map((topic, index) => (
+                                                        <li key={index} className="list-inline-item badge bg-secondary me-1">
+                                                            {topic}
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        )}
+                                    </CardBody>
+                                </Card>
+                            ))}
+                        </Slider>
                     </div>
 
-                    <input
-                        type="text"
-                        placeholder="Pesquisar por nome ou linguagem"
-                        value={searchQuery}
-                        onChange={(e) => setSearchQuery(e.target.value)}
-                        className="search-input"
-                    />
+                    <div className="back-container">
+                        <h2>
+                            Back-End
+                        </h2>
+                        <Slider {...sliderSettings} className="slider-container">
+                            {filteredBackEndRepos.map((repo) => (
+                                <Card className="project-card" key={repo.id}>
+                                    <CardHeader className="title">
+                                        <OverlayTrigger
+                                            placement="top"
+                                            overlay={<Tooltip id={`tooltip-${repo.id}`}>{repo.name}</Tooltip>}
+                                        >
+                                            <h4 className="text-truncate">{repo.name}</h4>
+                                        </OverlayTrigger>
+                                    </CardHeader>
+                                    <CardBody className="d-flex flex-column h-100">
+                                        <span className="date-create">
+                                            {Intl.DateTimeFormat("pt-BR").format(new Date(repo.created_at))}
+                                        </span>
+                                        <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
+                                            Acessar Projeto
+                                        </a>
+                                        {repo.topics && repo.topics.length > 0 && (
+                                            <div className="topics mt-3">
+                                                <ul className="list-inline">
+                                                    {repo.topics.map((topic, index) => (
+                                                        <li key={index} className="list-inline-item badge bg-secondary me-1">
+                                                            {topic}
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        )}
+                                    </CardBody>
+                                </Card>
+                            ))}
+                        </Slider>
+                    </div>
 
-                    <Button className="back-button" onClick={() => navigate('/')}>
-                        Voltar
-                    </Button>
-
-                </section>
-            </header>
-
-            <div className="content-main">
-                <h2>
-                    Projetos Front-End ({filteredFrontEndRepos.length})
-                </h2>
-                <Slider {...sliderSettings}>
-                    {filteredFrontEndRepos.map((repo) => (
-                        <Card className="project-card" key={repo.id}>
-                            <CardHeader className="title"><h4>{repo.name}</h4></CardHeader>
-                            <CardBody className="d-flex flex-column">
-                                <span className="date-create">
-                                    {Intl.DateTimeFormat("pt-BR").format(new Date(repo.created_at))}
-                                </span>
-                                <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
-                                    Acessar Projeto
-                                </a>
-                                <span className="language">
-                                    <span className="circle"></span>
-                                    {repo.language || "Desconhecida"}
-                                </span>
-                            </CardBody>
-                        </Card>
-                    ))}
-                </Slider>
-
-                <h2>
-                    Projetos Back-End ({filteredBackEndRepos.length})
-                </h2>
-                <Slider {...sliderSettings}>
-                    {filteredBackEndRepos.map((repo) => (
-                        <div className="project-card" key={repo.id}>
-                            <h4 className="title">{repo.name}</h4>
-                            <span className="date-create">
-                                {Intl.DateTimeFormat("pt-BR").format(new Date(repo.created_at))}
-                            </span>
-                            <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
-                                Acessar Projeto
-                            </a>
-                            <span className="language">
-                                <span className="circle"></span>
-                                {repo.language || "Desconhecida"}
-                            </span>
-                        </div>
-                    ))}
-                </Slider>
-
-                <h3 className="total-count">
-                    Total de Projetos Exibidos: {filteredFrontEndRepos.length + filteredBackEndRepos.length}
-                </h3>
+                    <h3 className="total-count">
+                        Total de Projetos Exibidos: {filteredFrontEndRepos.length + filteredBackEndRepos.length}
+                    </h3>
+                </div>
             </div>
-        </div>
+            <Footer />
+        </>
     );
 }
 

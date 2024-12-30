@@ -17,19 +17,18 @@ function Introduce() {
                             <h2>Design</h2>
                             <img src={DesignIcon} alt="Design ICon" />
                             <p>Create digital products with unique ideas</p>
-                            <a href="">See some....</a>
                         </div>
                         <div className="learning">
                             <h2>Front-end</h2>
                             <img src={FrontIcon} alt="Front ICon" />
                             <p>I develop front-end with coding super smooth</p>
-                            <a href="">See some....</a>
+                            {/* <a href="">See some....</a> */}
                         </div>
                         <div className="learning">
                             <h2>Back-end</h2>
                             <img src={BackIcon} alt="Back ICon" />
                             <p>where the code creates the magic behind the scenes</p>
-                            <a href="">See some....</a>
+                            {/* <a href="">See some....</a> */}
                         </div>
                     </div>
                     <div className="introduce-text col-lg-5 col-11 text-lg-start text-center mt-lg-0 mt-4">
